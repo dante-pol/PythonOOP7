@@ -18,3 +18,10 @@ class Worker:
         self.visiting_day = visiting_day
         self.visiting_time = visiting_time
 
+
+man = Client("Ivan", "Ivanov", 33)
+cat = Animal("tiger", "ginger", "busik")
+man_2 = Worker("Piter", "monday", "12:00")
+print(f"Возраст посетителя :{man.age} года")
+print(F"в нашем зоопарке есть {cat.type} по имени {cat.name}")
+print(f"Дрессировщика {cat.type} зовут {man_2.name}")
