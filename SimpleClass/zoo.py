@@ -32,3 +32,10 @@ class Worker:
         self.visiting_day = visiting_day
         self.visiting_time = visiting_time
 
+
+Worker_1 = Worker("Maria", "Monday, Wednesday, Thursday, Sunday", "8.00 - 18.00")
+Worker_2 = Worker("Gregory", "Monday, Tuesday, Friday, Saturday", "8.00 - 18.00")
+Worker_3 = Worker("Vera", "Tuesday, Wednesday, Friday, Sunday", "12.00 - 22.00")
+Worker_4 = Worker("Pablo", "Thursday, Friday, Saturday, Sunday", "12.00 - 22.00")
+Worker_5 = Worker("Konstantin", "Tuesday, Friday, Saturday, Sunday", "12.00 - 22.00")
+
