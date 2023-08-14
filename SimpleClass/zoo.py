@@ -19,6 +19,13 @@ class Animal:
         self.color = color
 
 
+Animal_1 = Animal("Evgesha", "Crocodile", "green")
+Animal_2 = Animal("Zhika", "Bear", "white")
+Animal_3 = Animal("Snoop", "Wolf", "grey")
+Animal_4 = Animal("Pushok", "Elephant", "grey")
+Animal_5 = Animal("Stepan", "Giraffe", "yellow")
+
+
 class Worker:
     def __init__(self, name, visiting_day, visiting_time):
         self.name = name
