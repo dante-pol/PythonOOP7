@@ -1,32 +1,34 @@
 class Client:
-    def __init__(self, first_name, second_name, age):
+    def __init__(self, first_name: str, second_name: str, age: int) -> None:
         self.first_name = first_name
         self.second_name = second_name
         self.age = age
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Name: {self.first_name}, Second_name: " \
                f"{self.second_name}, Age: {self.age}"
 
 
 class Animal:
-    def __init__(self, type, color, name):
+    def __init__(self, type: str, color: str, name: str) -> None:
         self.name = name
         self.type = type
         self.color = color
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Name: {self.name}, Type: {self.type}, " \
                f"Color: {self.color}"
 
 
 class Worker:
-    def __init__(self, name, visiting_day, visiting_time):
+    def __init__(self, name: str,
+                 visiting_day: str,
+                 visiting_time: str) -> None:
         self.name = name
         self.visiting_day = visiting_day
         self.visiting_time = visiting_time
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Name: {self.name}, Visiting_day: {self.visiting_day}," \
                f" Cisiting_time: {self.visiting_time}"
 
