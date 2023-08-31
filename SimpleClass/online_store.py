@@ -1,35 +1,35 @@
 class OnlineStore:
     def __init__(self, name):
-        self.name = name
-        self.products = []
-        self.customers = []
-        self.orders = []
+        self.__name = name
+        self.__products = []
+        self.__customers = []
+        self.__orders = []
 
     def add_product(self, product):
-        self.products.append(product)
+        self.__products.append(product)
 
     def remove_product(self, product):
-        self.products.remove(product)
+        self.__products.remove(product)
 
     def register_customer(self, customer):
-        self.customers.append(customer)
+        self.__customers.append(customer)
 
     def create_order(self, customer, product):
-        if customer in self.customers and product in self.products:
-            self.orders.append((customer, product))
+        if customer in self.__customers and product in self.__products:
+            self.__orders.append((customer, product))
         else:
             print("Ошибка при создании заказа: клиент или продукт не найден")
 
     def describe(self):
-        print(f"Магазин: {self.name}")
+        print(f"Магазин: {self.__name}")
         print("Продукты:")
-        for product in self.products:
+        for product in self.__products:
             print(f"- {product}")
         print("Клиенты:")
-        for customer in self.customers:
+        for customer in self.__customers:
             print(f"- {customer}")
         print("Заказы:")
-        for order in self.orders:
+        for order in self.__orders:
             print(f"- {order[0]} заказал {order[1]}")
 
 # Пример использования класса

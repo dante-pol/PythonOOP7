@@ -1,10 +1,10 @@
 class Computer:
     def __init__(self, brand, model, cpu, ram, storage):
-        self.brand = brand
-        self.model = model
-        self.cpu = cpu
-        self.ram = ram
-        self.storage = storage
+        self.__brand = brand
+        self.__model = model
+        self.__cpu = cpu
+        self.__ram = ram
+        self.__storage = storage
         self.is_on = False
         self.software = []
 
@@ -24,7 +24,7 @@ class Computer:
         print(f"Установлена программа {software_name}")
 
     def describe(self):
-        print(f"Марка: {self.brand}\nМодель: {self.model}\nПроцессор: {self.cpu}\nОперативная память: {self.ram} ГБ\nХранилище: {self.storage} ГБ")
+        print(f"Марка: {self.__brand}\nМодель: {self.__model}\nПроцессор: {self.__cpu}\nОперативная память: {self.__ram} ГБ\nХранилище: {self.__storage} ГБ")
         print(f"Состояние питания: {'включен' if self.is_on else 'выключен'}")
         print("Установленные программы:", ', '.join(self.software))
 
