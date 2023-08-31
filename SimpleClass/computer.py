@@ -8,11 +8,11 @@ class Computer:
         self.is_on = False
         self.software = []
 
-    def set_turn_on(self):
+    def turn_on(self):
         self.is_on = True
         print("Компьютер включен")
 
-    def set_turn_off(self):
+    def turn_off(self):
         self.is_on = False
         print("Компьютер выключен")
 
@@ -30,7 +30,7 @@ class Computer:
 
 # Пример использования класса
 comp = Computer("Apple", "MacBook Pro", "Intel Core i7", 16, 512)
-comp.set_turn_on()
+comp.turn_on()
 comp.install_software("Microsoft Office")
 comp.describe()
-comp.set_turn_off()
+comp.turn_off()
